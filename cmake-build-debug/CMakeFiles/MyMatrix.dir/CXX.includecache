@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/molok/CLionProjects/MyMatrix/Allocator.h
+iostream
+-
+
+C:/Users/molok/CLionProjects/MyMatrix/MyMatrix.h
+memory
+-
+Allocator.h
+C:/Users/molok/CLionProjects/MyMatrix/Allocator.h
+string
+-
+iomanip
+-
+
+C:/Users/molok/CLionProjects/MyMatrix/MyMatrix_.h
+MyMatrix.h
+C:/Users/molok/CLionProjects/MyMatrix/MyMatrix.h
+
+C:/Users/molok/CLionProjects/MyMatrix/main.cpp
+iostream
+-
+MyMatrix_.h
+C:/Users/molok/CLionProjects/MyMatrix/MyMatrix_.h
+string
+-
+

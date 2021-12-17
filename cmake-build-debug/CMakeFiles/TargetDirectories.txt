@@ -1,0 +1,3 @@
+C:/Users/molok/CLionProjects/MyMatrix/cmake-build-debug/CMakeFiles/MyMatrix.dir
+C:/Users/molok/CLionProjects/MyMatrix/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/molok/CLionProjects/MyMatrix/cmake-build-debug/CMakeFiles/rebuild_cache.dir
