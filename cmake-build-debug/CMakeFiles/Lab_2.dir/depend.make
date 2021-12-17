@@ -12,5 +12,13 @@ CMakeFiles/Lab_2.dir/check.cpp.o: \
  ../Matrix_utilities.h \
  ../check.cpp
 CMakeFiles/Lab_2.dir/main.cpp.o: \
- ../check.h \
+ ../Allocator.h \
+ ../Allocator_other.h \
+ ../Matrix.h \
+ ../Matrix.hpp \
+ ../Matrix_utilites.hpp \
+ ../Matrix_utilites_additional.h \
+ ../Matrix_utilites_additional.hpp \
+ ../Matrix_utilities.h \
+ ../check.cpp \
  ../main.cpp

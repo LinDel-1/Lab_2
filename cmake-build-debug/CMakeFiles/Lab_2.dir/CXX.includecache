@@ -60,11 +60,19 @@ iostream
 string
 -
 
-/Users/fedor/CLionProjects/Lab_2/check.h
-
 /Users/fedor/CLionProjects/Lab_2/main.cpp
-check.h
-/Users/fedor/CLionProjects/Lab_2/check.h
+check.cpp
+/Users/fedor/CLionProjects/Lab_2/check.cpp
 stdlib.h
+-
+Matrix_utilities.h
+/Users/fedor/CLionProjects/Lab_2/Matrix_utilities.h
+Matrix_utilites_additional.h
+/Users/fedor/CLionProjects/Lab_2/Matrix_utilites_additional.h
+Allocator_other.h
+/Users/fedor/CLionProjects/Lab_2/Allocator_other.h
+iostream
+-
+string
 -
 

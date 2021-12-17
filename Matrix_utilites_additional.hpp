@@ -166,8 +166,10 @@ Matrix<> result (mat.m_columns, 1);
 double determ = temp.det();
 
 for (int i =0;i < mat.m_columns; ++i){
-    for (int j = 0; j < mat.m_rows; ++j) {temp(i,j) = vec(i,j);}
-    result(i,1) = temp.det() / determ;
+    for (int j = 0; j < mat.m_rows; ++j)
+    {temp(i,j) = vec(i,j);}
+    result(i,0) = temp.det() / determ;
+    for (int j = 0; j < mat.m_rows; ++j) {temp(j,i) = mat(j,i);}
 }
     return result;
 }
