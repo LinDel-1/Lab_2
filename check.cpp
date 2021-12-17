@@ -96,7 +96,43 @@ void test_4(){
 
 // ошибки
 void test_5(){
+    Matrix<int> m1 { {1, 0},{ 0, 0},{ 1, 0} };
+    Matrix<int> m2 { {1, 0, 0}, {0, 0, 0}, {0, 0, 0} };
+    Matrix<int> m3 { {1, 0}, {0, 5} };
+    Matrix<int> E { {1, 0, 0}, {0, 1, 0}, {0, 0, 1} };
+    Matrix<int> vec { 1,2,3};
+    Matrix<int> vec2 { 1,2};
+//
+//    m1.det();
+//
+//    m1.minor(0,6);
+//    m1.minor(6,0);
+//
+//    m1.trace();
+//
+//    inv(m1);
+//    inv(m2);
 
+//    solve(E, m1);// не вектор
+//    solve(m3,vec);// разные размеры матрицы и вектора
+//    solve(m2,vec); // det = 0
+//    solve(m1,vec);// не квадратная матрица
+
+//    m1 == m2;
+
+//    norm(m1); // это норма для вектора!!! m1.norma для матрицы
+
+//    multy_scalar(m1, vec);
+//    multy_scalar(vec, m1);
+//    multy_scalar(vec, vec2);
+
+//    multy_vector(m1, vec);
+//    multy_vector(vec, m1);
+//    multy_vector(vec, vec2);
+//    multy_vector(vec2, vec);
+
+//    unit(m1);
 };
+
 void test_6();
 void test_7();

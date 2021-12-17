@@ -211,7 +211,7 @@ bool operator==(const Matrix<T1, Alloc_1> &right,  const Matrix<T2, Alloc_2> &le
 //----------------------------------------|вектора|-----------------------------------------------
 
 #include<math.h>
-//Евклидова норма
+//Евклидова норма для вектора!!!!!
 template<typename T, typename Alloc> // Оператор перемножения матрицы на число (разных типов)
 double norm(const Matrix<T, Alloc>& obj)
 {
@@ -256,7 +256,7 @@ auto multy_vector(const Matrix<T1, A1>& obj1, const Matrix<T2, A2>& obj2) ->Matr
     if(obj1.get_columns()!=1) throw LinAlgError("obj1 is not a vector, vector multiplication is impossible", 5);
     if(obj2.get_columns()!=1) throw LinAlgError("obj2 is not a vector, vector multiplication is impossible", 6);
     if(obj1.get_rows()!=3) throw LinAlgError("Dimension vector obj1 is not 3, vector multiplication is impossible", 7);
-    if(obj2.get_rows()!=3) throw LinAlgError("Dimension vector obj3 is not 3, vector multiplication is impossible", 8);
+    if(obj2.get_rows()!=3) throw LinAlgError("Dimension vector obj2 is not 3, vector multiplication is impossible", 8);
 
     //проверка на вектора и что вектора размерности три
     for (int i = 0; i < obj1.get_rows(); ++i)
