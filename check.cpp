@@ -82,8 +82,21 @@ void test_3(){
 
 // СЛАУ
 void test_4(){
+    Matrix<int> vec1  {1, 1, 1};
+    Matrix<int> E { {1, 0, 0}, {0, 1, 0}, {0, 0, 1} };
+
+    cout  << "solve (E, m1):" << endl << solve (E, vec1)<< endl;
+
+    Matrix<int> vec2  {1, 2, 3};
+    Matrix<int> m1 { {1, 2, 3}, {4, 1, 0}, {0, 0, 8} };
+
+    cout  << "solve (E, m1):" << endl << solve (m1, vec2)<< endl;
 
 };
-void test_5();
+
+// ошибки
+void test_5(){
+
+};
 void test_6();
 void test_7();
