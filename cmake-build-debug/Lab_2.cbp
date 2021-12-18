@@ -88,9 +88,6 @@
 		<Unit filename="/Users/fedor/CLionProjects/Lab_2/Allocator_other.h">
 			<Option target="Lab_2"/>
 		</Unit>
-		<Unit filename="/Users/fedor/CLionProjects/Lab_2/LinAlgError.h">
-			<Option target="Lab_2"/>
-		</Unit>
 		<Unit filename="/Users/fedor/CLionProjects/Lab_2/Matrix.h">
 			<Option target="Lab_2"/>
 		</Unit>
@@ -100,12 +97,15 @@
 		<Unit filename="/Users/fedor/CLionProjects/Lab_2/Matrix_utilites.hpp">
 			<Option target="Lab_2"/>
 		</Unit>
+<<<<<<<<< Temporary merge branch 1
 		<Unit filename="/Users/fedor/CLionProjects/Lab_2/Matrix_utilites_additional.h">
 			<Option target="Lab_2"/>
 		</Unit>
 		<Unit filename="/Users/fedor/CLionProjects/Lab_2/Matrix_utilites_additional.hpp">
 			<Option target="Lab_2"/>
 		</Unit>
+=========
+>>>>>>>>> Temporary merge branch 2
 		<Unit filename="/Users/fedor/CLionProjects/Lab_2/Matrix_utilities.h">
 			<Option target="Lab_2"/>
 		</Unit>

@@ -1,9 +1,11 @@
 #include "Matrix.h"
 #pragma once
 
+using namespace linalg;
+
 // Конструктор с 2 параметрами
 template<typename T, typename Alloc> 
-inline Matrix<T, Alloc>::Matrix(const size_t rows, const size_t columns, Alloc alloc) 
+inline Matrix<T, Alloc>::Matrix(const size_t rows, const size_t columns, Alloc alloc)
 	: m_alloc(alloc)
 {
 	T* ptr_temp = m_alloc.allocate(rows * columns); // Просто выделили память
@@ -91,7 +93,7 @@ inline Matrix<T, Alloc>::Matrix(std::initializer_list<std::initializer_list<Othe
 
 // Конструктор копирования
 template<typename T, typename Alloc>
-inline Matrix<T, Alloc>::Matrix(const Matrix& object) 
+inline Matrix<T, Alloc>::Matrix(const Matrix& object)
 	: m_alloc(object.m_alloc)
 {
 	const size_t rows = object.get_rows();
@@ -171,7 +173,7 @@ inline Matrix<T, Alloc>::~Matrix()noexcept {
 
 // Оператор присваивания копирующий
 template<typename T, typename Alloc>
-inline Matrix<T, Alloc>& Matrix<T, Alloc>::operator = (const Matrix& object) {
+inline Matrix<T, Alloc>& linalg::Matrix<T, Alloc>::operator = (const Matrix& object) {
 	if (m_ptr == object.m_ptr) return *this; // Проверка на самоприсваивание
     if (object.size() > m_capacity) { // придётся перевыделять память
         *this = Matrix(object); // скопировали объект во временный и своровали у него ресурсы с помощью перемещения
@@ -209,7 +211,7 @@ inline Matrix<T, Alloc>& Matrix<T, Alloc>::operator = (const Matrix& object) {
 // Оператор присваивания копирующий от матрицы другого типа
 template<typename T, typename Alloc>
 template<typename Other, typename Alloc_Other>
-inline Matrix<T, Alloc>& Matrix<T, Alloc>::operator = (const Matrix<Other, Alloc_Other>& object) {
+inline Matrix<T, Alloc>& linalg::Matrix<T, Alloc>::operator = (const Matrix<Other, Alloc_Other>& object) {
 	// Нет смысла делать проверку на самоприсваивание т.к. там матрица другого типа => она точно другая
 	if (object.size() > m_capacity) { // придётся перевыделять память
 		*this = Matrix(object); // скопировали объект во временный и своровали у него ресурсы с помощью перемещения
@@ -246,7 +248,7 @@ inline Matrix<T, Alloc>& Matrix<T, Alloc>::operator = (const Matrix<Other, Alloc
 
 // Оператор присваивания перемещающий 
 template<typename T, typename Alloc>
-inline Matrix<T, Alloc>& Matrix<T, Alloc>::operator = (Matrix&& object) noexcept {
+inline Matrix<T, Alloc>& linalg::Matrix<T, Alloc>::operator = (Matrix&& object) noexcept {
 	std::swap(m_ptr, object.m_ptr);
 	std::swap(m_columns, object.m_columns);
 	std::swap(m_rows, object.m_rows);
